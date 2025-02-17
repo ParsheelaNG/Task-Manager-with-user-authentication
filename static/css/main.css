@@ -1,0 +1,36 @@
+.navbar {
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    padding-top: 20px;
+    position: fixed;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    background-color: #575757;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}

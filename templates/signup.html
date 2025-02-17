@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block body %}
+  <div class="col-4 mx-auto">
+    <h2>Signup</h2>
+    <hr>
+    <form method="post">
+      {{ form.hidden_tag() }}
+      
+      <div class="form-group">
+        {{ form.Username.label }} 
+        {{ form.Username(size=20, class="form-control") }}
+      </div>
+      
+      <div class="form-group">
+        {{ form.Password.label }} 
+        {{ form.Password(size=20, class="form-control") }}
+      </div>
+      
+      <div class="form-group">
+        {{ form.MailID.label }} 
+        {{ form.MailID(size=30, class="form-control") }}
+      </div>
+      
+      <div class="form-group">
+        {{ form.PhoneNumber.label }} 
+        {{ form.PhoneNumber(size=10, class="form-control") }}
+      </div>
+      
+      <div class="form-group">
+        {{ form.Place.label }} 
+        {{ form.Place(size=15, class="form-control") }}
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Signup</button>
+    </form><div class="col">
+      
+    </div>
+    <!-- <a href="{{ url_for('login') }}" class="btn btn-success">Login</a> -->
+  </div>
+{% endblock body %}

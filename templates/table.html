@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static\css\table.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>TASK DASHBOARD</h1>
+            <div class="col">
+                <table>
+                    <tr>
+                        <th><h3>Task Name</h3></th>
+                        <th><h3>Task Description</h3></th>
+                        <th><h3>Deadline</h3></th>
+                        <th><h3>Priority</h3></th>
+                    </tr>
+                    {% for i in data %}
+                    <tr>
+                        <td>{{ i[1] }}</td>
+                        <td>{{ i[2] }}</td>
+                        <td>{{ i[3] }}</td>
+                        <td>{{ i[4] }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <div class="col1">
+                <button><a href="{{url_for('home')}}">Go to home</a></button>
+                <button><a href="{{url_for('tasks')}}">Add Task</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

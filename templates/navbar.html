@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static\css\style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col1">
+                <h2>Task Manager</h2>
+            </div>
+            <div class="col2">
+                <ul>
+                    <li><a class="active" >Home</a></li>
+                    <li><a href="{{url_for('profile')}}">My Profile</a></li>
+                    <li><a href="{{url_for('login')}}">Login</a></li>
+                    <li><a href="{{url_for('tasks')}}">Tasks</a></li>
+                    <li><a href="{{url_for('logout')}}">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+   </body>
+</html>

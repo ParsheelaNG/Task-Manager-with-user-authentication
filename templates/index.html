@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static\css\tasks.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>ADD TASKS</h1>
+                    <form action="{{url_for('tasks')}}" method="post">
+                        <div class="one">
+                        <label for="taskname">Task Name</label><br>
+                        <input type="text" name="taskname" placeholder="Enter the task:" required><br>
+                    </div>
+                    <div class="two">
+                        <label for="description">Task Description</label><br>
+                        <input type="textarea" name="taskdescription" placeholder="Enter description of task (min-50 words)" required><br>
+                    </div>
+                    <div class="three">
+                        <label for="deadline">Deadline</label><br>
+                        <input type="date" name="deadline" required><br>
+                    </div>
+                    <div class="four">
+                        <label for="priority">Task Priority</label><br>
+                        <select name="priority"><br>
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
+                    </div>
+                        <div class="five">
+                            <button type="Submit"><h4>Submit</h4></button>
+                        </div>
+                    </form>
+        </div>
+        </div>
+    </div>
+   
+</body>
+</html>
